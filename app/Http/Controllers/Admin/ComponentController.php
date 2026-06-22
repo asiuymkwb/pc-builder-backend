@@ -106,7 +106,7 @@ class ComponentController extends Controller
         $component = Component::findOrFail($id);
         $component->update(['is_active' => false]);
 
-        return response()->json(['message' => 'Componente disattivato.']);
+        return response()->json(['message' => 'Componente eliminato.']);
     }
 }
 
